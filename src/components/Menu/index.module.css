@@ -1,0 +1,24 @@
+.menuContainer {
+    @apply absolute px-5 py-1 flex justify-between w-1/4 left-1/2 top-10 rounded-md;
+    border: 1px solid theme('colors.border1', #000); /* provide a default color */
+    transform: translateX(-50%);
+    box-shadow: theme('colors.shadow1', 0 2px 4px rgba(0, 0, 0, 0.1)); /* provide a default shadow */
+    background-color: theme('colors.background', #fff); /* provide a default background color */
+    
+
+    .iconWrapper {
+        @apply cursor-pointer flex justify-center items-center h-10 w-10 rounded-md;
+
+        &:hover, &.active {
+            background-color: theme('colors.text2', #000); /* provide a default hover color */
+        }
+
+        .icon{
+                color: theme('colors.text1');
+                font-size: 20px;
+        }
+    }
+
+    
+ 
+}
